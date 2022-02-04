@@ -1,0 +1,4 @@
+%%[
+     SET @encData=EncryptSymmetric("ExampleData", "AES", "passwordExternalKey", @null, "saltExternalKey", @null, "IVExternalKey", @null)
+     SET @clearData=DecryptSymmetric(@encData, "AES", "passwordExternalKey", @null, "saltExternalKey", @null, "IVExternalKey", @null)
+]%%
